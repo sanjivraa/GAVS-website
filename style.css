@@ -392,6 +392,99 @@ p { color: var(--text-muted); }
 .stat-item h3 { font-size: 2.5rem; font-weight: 800; color: var(--primary); }
 .stat-item p { font-size: 0.9rem; margin-top: 4px; }
 
+/* ---------- Founder Section ---------- */
+.founder-section {
+  margin: 80px 0 60px;
+}
+
+.founder-card {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 48px;
+  align-items: center;
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 48px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+}
+
+.founder-image {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.founder-image img {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--primary);
+  box-shadow: var(--shadow-lg);
+}
+
+.founder-badge {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--primary);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.founder-info h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--text);
+}
+
+.founder-title {
+  color: var(--primary);
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.founder-bio {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+  margin-bottom: 24px;
+  font-style: italic;
+}
+
+.founder-social {
+  display: flex;
+  gap: 12px;
+}
+
+.founder-social-link {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: var(--text-muted);
+  transition: all var(--transition);
+}
+
+.founder-social-link:hover {
+  background: var(--primary);
+  color: white;
+  transform: translateY(-2px);
+}
+
 /* ---------- Services ---------- */
 .services { background: var(--bg); }
 .services-grid {
@@ -696,6 +789,7 @@ p { color: var(--text-muted); }
   .services-grid { grid-template-columns: repeat(2, 1fr); }
   .portfolio-grid { grid-template-columns: repeat(2, 1fr); }
   .stats-row { grid-template-columns: repeat(2, 1fr); }
+  .founder-card { grid-template-columns: 1fr; gap: 32px; text-align: center; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
 }
 
